@@ -1,4 +1,5 @@
 body {
+  min-width: 320px;
   margin: 0;
   font-family: "MyriadPro", sans-serif;
 }
@@ -29,7 +30,9 @@ body {
 }
 
 nav {
+  position: relative;
   padding: 1rem 0;
+  background-color: aliceblue;
 }
 
 .navigation-wrapper {
@@ -38,6 +41,10 @@ nav {
 
 .site-branding {
   width: 100%;
+}
+
+.site-branding img {
+  max-width: 240px;
 }
 
 .menu-items {
@@ -69,7 +76,7 @@ nav {
 
 .menu-icon {
   position: absolute;
-  top: 2rem;
+  top: 1.725rem;
   right: 1rem;
   width: 2.125rem;
   display: flex;
@@ -99,6 +106,16 @@ nav.open .menu-icon span:nth-child(2) {
 
 nav.open .menu-icon span:last-child {
   transform: rotate(45deg) translateY(-0.8125rem);
+}
+
+/* min-width: 400px */
+@media screen and (min-width: 25rem) {
+  .site-branding img {
+    max-width: 100%;
+  }
+  .menu-icon {
+    top: 2rem;
+  }
 }
 
 /* min-width: 992px */
