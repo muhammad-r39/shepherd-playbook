@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="fonts/fonts.css" />
   </head>
-  <body>
+  <body class="home">
     <header>
       <nav aria-label="Site navigation">
         <div class="container">
-          <div class="navigation-wrapper flex justify-between items-center">
-            <a href="#" class="site-branding" aria-label="Home">
+          <div class="navigation-wrapper">
+            <a href="index.html" class="site-branding" aria-label="Home">
               <img src="img/logo.png" alt="Logo" />
             </a>
             <!-- Main Menu Items -->
-            <ul class="menu-items flex justify-between">
-              <li><a href="#">Company Resources</a></li>
-              <li><a href="#">Employee Resources</a></li>
-              <li><a href="#">Workspaces & Teams</a></li>
+            <ul class="menu-items">
+              <li><a href="marketing.html">Company Resources</a></li>
+              <li><a href="human-resources.html">Employee Resources</a></li>
+              <li><a href="employee-directory.html">Workspaces & Teams</a></li>
             </ul>
             <!-- Hamburger Menu for Mobile -->
             <button class="menu-icon" aria-label="Toggle menu">
@@ -30,32 +30,189 @@
           </div>
         </div>
       </nav>
-      <div class="header-banner">
+      <div class="header-banner home">
         <div class="container">
           <!-- Page Title -->
           <h1></h1>
         </div>
       </div>
       <div class="header-logos">
-        <ul>
-          <li>
-            <a href="#"><img src="" alt="" /></a>
-          </li>
-        </ul>
+        <div class="container">
+          <ul class="full-width">
+            <li>
+              <a href="#"><img src="img/brands/brand1.png" alt="Brand" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/brands/brand2.png" alt="Brand" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/brands/brand3.png" alt="Brand" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/brands/brand4.png" alt="Brand" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/brands/brand5.png" alt="Brand" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/brands/brand6.png" alt="Brand" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/brands/brand7.png" alt="Brand" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="img/brands/brand8.png" alt="Brand" /></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Main Content Area -->
-    <div class="content-wrapper">
+    <div class="body-content">
       <div class="container">
-        <main>
-          <section class="section-name"></section>
-          <section class="section-name"></section>
-        </main>
-        <!-- Sidebar -->
-        <aside>
-          <section class="section-name"></section>
-          <section class="section-name"></section>
-        </aside>
+        <div class="content-wrapper">
+          <main>
+            <section class="news-center">
+              <h2>News Center</h2>
+              <div class="news-carousel">
+                <div class="news-category">
+                  <ul>
+                    <li><button>All News</button></li>
+                    <li><button>Announcements</button></li>
+                    <li><button>Commercial</button></li>
+                    <li><button>Training</button></li>
+                    <li><button>Event</button></li>
+                  </ul>
+                  <button>></button>
+                </div>
+                <div class="news-post">
+                  <div class="news-card">
+                    <div class="featured-image">
+                      <img src="img/update/card1.png" alt="Featured Image" />
+                    </div>
+                    <div>
+                      <div class="post-meta">
+                        <h4 class="author">Anderson R. White</h4>
+                        <span class="post-date">Auguest 26, 2024</span>
+                      </div>
+                      <h3>
+                        An Ounce of Prevention: E&O Avoidance and Education 33rd
+                        Article of 2024
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="news-card">
+                    <div class="featured-image">
+                      <img src="img/update/card2.png" alt="Featured Image" />
+                    </div>
+                    <div>
+                      <div class="post-meta">
+                        <h4 class="author">Shepherd Marketing</h4>
+                        <span class="post-date">July 24, 2024</span>
+                      </div>
+                      <h3>Quarterly Marketing Update</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="news-pagination">
+                  <img
+                    class="desktop"
+                    src="img/pagination.png"
+                    alt="pagination"
+                  />
+                  <img
+                    class="mobile"
+                    src="img/pagination-mobile.png"
+                    alt="pagination"
+                  />
+                </div>
+              </div>
+            </section>
+            <section class="shep-social">
+              <h2>ShepSocial</h2>
+              <div class="social-posts">
+                <img src="img/social/card1.png" alt="social post" />
+                <img src="img/social/card2.png" alt="social post" />
+                <img src="img/social/card3.png" alt="social post" />
+              </div>
+            </section>
+            <section class="events-holidays">
+              <h2>Events & Holidays</h2>
+              <div>
+                <img class="calendar" src="img/calendar.png" alt="calendar" />
+              </div>
+            </section>
+          </main>
+          <!-- Sidebar -->
+          <aside>
+            <section class="internal-forms">
+              <h2>Internal Forms</h2>
+              <div class="internal-forms-list">
+                <a class="btn btn-blue" href="#">
+                  Carrier Login Request Form
+                </a>
+                <a class="btn btn-orange" href="#">Marketing Request Form</a>
+                <a class="btn btn-light" href="#">
+                  Stationary & Business Card Request Form
+                </a>
+                <a class="btn btn-blue" href="#">Volunteer Hours Tracking</a>
+                <a class="btn btn-orange" href="#">
+                  Carmel Visitor Registration Form
+                </a>
+                <a class="btn btn-light" href="#">
+                  Stationary & Business Card Request Form
+                </a>
+              </div>
+            </section>
+            <section class="birthdays">
+              <h2>Birthdays</h2>
+              <ul class="birthday-list">
+                <li>
+                  <img src="img/people/people1.png" alt="people" />
+                  <div>
+                    <h4 class="name">Leo Giles</h4>
+                    <span class="date">Today</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/people/people2.png" alt="people" />
+                  <div>
+                    <h4 class="name">Jermaine Higgins</h4>
+                    <span class="date">November 11</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/people/people3.png" alt="people" />
+                  <div>
+                    <h4 class="name">Pauline Glenn</h4>
+                    <span class="date">November 23</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/people/people4.png" alt="people" />
+                  <div>
+                    <h4 class="name">Eve Barton</h4>
+                    <span class="date">November 28</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/people/people5.png" alt="people" />
+                  <div>
+                    <h4 class="name">Al Donaldson</h4>
+                    <span class="date">December 1</span>
+                  </div>
+                </li>
+                <li>
+                  <img src="img/people/people4.png" alt="people" />
+                  <div>
+                    <h4 class="name">Eve Barton</h4>
+                    <span class="date">November 28</span>
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </aside>
+        </div>
       </div>
     </div>
     <!-- Navigation Button Script -->
