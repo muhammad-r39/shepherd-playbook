@@ -81,37 +81,40 @@
                     <li><button>Announcements</button></li>
                     <li><button>Commercial</button></li>
                     <li><button>Training</button></li>
-                    <li><button>Event</button></li>
                   </ul>
-                  <button>></button>
+                  <button class="next">
+                    <img src="img/arrow-next.png" alt="next" />
+                  </button>
                 </div>
-                <div class="news-post">
+                <div class="news-posts">
                   <div class="news-card">
-                    <div class="featured-image">
-                      <img src="img/update/card1.png" alt="Featured Image" />
+                    <div
+                      class="featured-image"
+                      style="background-image: url(img/update/card1.png)"
+                    ></div>
+                    <div class="post-meta">
+                      <h4 class="author">Anderson R. White</h4>
+                      <span class="post-date">Auguest 26, 2024</span>
                     </div>
-                    <div>
-                      <div class="post-meta">
-                        <h4 class="author">Anderson R. White</h4>
-                        <span class="post-date">Auguest 26, 2024</span>
-                      </div>
+                    <a class="post-title" href="#">
                       <h3>
-                        An Ounce of Prevention: E&O Avoidance and Education 33rd
-                        Article of 2024
+                        An Ounce of Prevention: E&O Avoidance and Education
+                        <br />33rd Article of 2024
                       </h3>
-                    </div>
+                    </a>
                   </div>
                   <div class="news-card">
-                    <div class="featured-image">
-                      <img src="img/update/card2.png" alt="Featured Image" />
+                    <div
+                      class="featured-image"
+                      style="background-image: url(img/update/card2.png)"
+                    ></div>
+                    <div class="post-meta">
+                      <h4 class="author">Shepherd Marketing</h4>
+                      <span class="post-date">July 24, 2024</span>
                     </div>
-                    <div>
-                      <div class="post-meta">
-                        <h4 class="author">Shepherd Marketing</h4>
-                        <span class="post-date">July 24, 2024</span>
-                      </div>
+                    <a class="post-title" href="#">
                       <h3>Quarterly Marketing Update</h3>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <div class="news-pagination">
@@ -131,15 +134,68 @@
             <section class="shep-social">
               <h2>ShepSocial</h2>
               <div class="social-posts">
-                <img src="img/social/card1.png" alt="social post" />
-                <img src="img/social/card2.png" alt="social post" />
-                <img src="img/social/card3.png" alt="social post" />
+                <div class="social-card">
+                  <img src="img/social/card1.png" alt="social post" />
+                </div>
+                <div class="social-card">
+                  <img src="img/social/card2.png" alt="social post" />
+                </div>
+                <div class="social-card">
+                  <img src="img/social/card3.png" alt="social post" />
+                </div>
               </div>
             </section>
             <section class="events-holidays">
               <h2>Events & Holidays</h2>
-              <div>
+              <div class="calendar-events-container">
                 <img class="calendar" src="img/calendar.png" alt="calendar" />
+                <ul class="event-lists">
+                  <li class="event label-meeting">
+                    <div class="event-date">
+                      <span class="date">13</span>
+                      <span class="month">APR</span>
+                    </div>
+                    <div class="event-details">
+                      <div class="event-time">
+                        <h4 class="event-title">First Aid Training</h4>
+                        <span class="event-duration">11:30 am - 12:30 pm</span>
+                      </div>
+                      <div class="event-type">
+                        <button>Meeting</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="event label-get-together">
+                    <div class="event-date">
+                      <span class="date">16</span>
+                      <span class="month">APR</span>
+                    </div>
+                    <div class="event-details">
+                      <div class="event-time">
+                        <h4 class="event-title">Easter Lunch</h4>
+                        <span class="event-duration">12:00 pm - 1:00 pm</span>
+                      </div>
+                      <div class="event-type">
+                        <button>Get-together</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="event label-business">
+                    <div class="event-date">
+                      <span class="date">29</span>
+                      <span class="month">MAY</span>
+                    </div>
+                    <div class="event-details">
+                      <div class="event-time">
+                        <h4 class="event-title">Memorial Day</h4>
+                        <span class="event-duration">12:00 pm - 1:00 pm</span>
+                      </div>
+                      <div class="event-type">
+                        <button>Business</button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </section>
           </main>
@@ -152,14 +208,14 @@
                   Carrier Login Request Form
                 </a>
                 <a class="btn btn-orange" href="#">Marketing Request Form</a>
-                <a class="btn btn-light" href="#">
+                <a class="btn btn-light strip-padding" href="#">
                   Stationary & Business Card Request Form
                 </a>
                 <a class="btn btn-blue" href="#">Volunteer Hours Tracking</a>
-                <a class="btn btn-orange" href="#">
+                <a class="btn btn-orange strip-padding" href="#">
                   Carmel Visitor Registration Form
                 </a>
-                <a class="btn btn-light" href="#">
+                <a class="btn btn-light strip-padding" href="#">
                   Stationary & Business Card Request Form
                 </a>
               </div>
