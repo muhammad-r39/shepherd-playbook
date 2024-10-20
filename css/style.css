@@ -732,6 +732,131 @@ aside h2 {
   text-align: left;
 }
 
+.employee-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  row-gap: 0.875rem;
+  list-style: none;
+  padding: 2rem 0 0;
+  margin: 0;
+}
+
+.employee-categories li {
+  flex: 0 1 100%;
+  width: 100%;
+}
+
+.employee-categories .btn {
+  width: 100%;
+  color: #000;
+  background-color: #fff;
+  border: 0.125rem solid;
+  border-radius: 0.625rem;
+  padding: 0.46875rem 0.625rem;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.employee-categories .btn.empty {
+  height: 2.5rem;
+}
+
+.employee-categories .btn:hover {
+  text-shadow: none;
+  background-color: #efefef;
+  color: #fff;
+}
+
+.employee-categories .btn-blue {
+  border-color: #102f54;
+}
+
+.employee-categories .btn-blue:hover {
+  background-color: #102f54;
+}
+
+.employee-categories .btn-red {
+  border-color: #eb1e4e;
+}
+
+.employee-categories .btn-red:hover {
+  background-color: #eb1e4e;
+}
+
+.employee-categories .btn-light {
+  border-color: #89aed3;
+}
+
+.employee-categories .btn-light:hover {
+  background-color: #89aed3;
+}
+
+.employee-categories .btn-orange {
+  border-color: #e8c173;
+}
+
+.employee-categories .btn-orange:hover {
+  background-color: #e8c173;
+}
+
+.employee-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 1.5rem 0 0;
+  margin: 0;
+}
+
+.employee-list li {
+  flex: 0 1 100%;
+  width: 100%;
+}
+
+.employee-list .card {
+  text-align: center;
+  padding: 1.25rem 0.875rem;
+  border: 1px solid #eee;
+  border-radius: 0.3125rem;
+  filter: drop-shadow(1px 2px 2px rgb(0 0 0 / 10%));
+  background-color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.employee-list .card:hover {
+  background-color: #f8f8f8;
+}
+
+.employee-list .description {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.employee-list .name {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.employee-list .designation {
+  margin: 0;
+  font-weight: 400;
+  color: #747474;
+  font-size: 0.875rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.employee-list .bio {
+  height: 5.5rem;
+  margin: 0;
+}
+
 /* min-width: 400px */
 @media screen and (min-width: 25rem) {
   .site-branding img {
@@ -794,6 +919,14 @@ aside h2 {
     width: 12rem;
     padding-right: 1.125rem;
   }
+  .employee-list li {
+    flex: 0 1 calc(50% - 0.75rem);
+    width: calc(50% - 0.75rem);
+  }
+  .employee-categories li {
+    flex: 0 1 calc(50% - 1rem);
+    width: calc(50% - 1rem);
+  }
 }
 
 /* min-width: 600px */
@@ -839,6 +972,10 @@ aside h2 {
   .data table th:nth-child(3) {
     width: 7.625rem;
   }
+  .employee-list li {
+    flex: 0 1 calc(33.33% - 0.75rem);
+    width: calc(33.33% - 0.75rem);
+  }
 }
 /* End min-width 768px */
 
@@ -846,6 +983,10 @@ aside h2 {
 @media screen and (min-width: 50rem) {
   .resources-carousel .slide {
     flex: 1 0 calc(33.33% - 0.875rem);
+  }
+  .employee-categories li {
+    flex: 0 1 calc(33.33% - 1.5rem);
+    width: calc(33.33% - 1.5rem);
   }
 }
 
@@ -895,6 +1036,9 @@ aside h2 {
   main {
     width: calc(100% - 23rem);
   }
+  .no-sidebar main {
+    width: 100%;
+  }
   aside {
     width: 19.625rem;
   }
@@ -926,6 +1070,17 @@ aside h2 {
   .slide-image {
     height: 10rem;
   }
+  .employee-list li {
+    flex: 0 1 calc(25% - 0.75rem);
+    width: calc(25% - 0.75rem);
+  }
+  .employee-categories {
+    column-gap: 3rem;
+  }
+  .employee-categories li {
+    flex: 0 1 calc(33.33% - 2rem);
+    width: calc(33.33% - 2rem);
+  }
 }
 /* End min-width: 992px */
 
@@ -952,12 +1107,22 @@ aside h2 {
   .slide-image {
     height: 8.625rem;
   }
+  .employee-categories {
+    column-gap: 4rem;
+  }
+  .employee-categories li {
+    flex: 0 1 calc(33.33% - 2.75rem);
+    width: calc(33.33% - 2.75rem);
+  }
 }
 
 /* min-width: 1200px */
 @media screen and (min-width: 75rem) {
   .container {
     padding: 0 4.375rem;
+  }
+  .container.sm {
+    padding: 0 6.25rem;
   }
   .content-wrapper {
     gap: 3.125rem;
