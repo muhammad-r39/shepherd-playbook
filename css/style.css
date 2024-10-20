@@ -14,6 +14,10 @@ img {
   max-width: 100%;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .container {
   max-width: 76.25rem;
   margin: auto;
@@ -168,6 +172,17 @@ nav.open .menu-icon span:last-child {
   line-height: 1;
 }
 
+.training-videos h2 {
+  margin: 0;
+}
+
+.training-videos h3 {
+  margin: 0.5rem 0 0;
+  color: #112f56;
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+
 .body-content aside section:not(:first-of-type) h2 {
   margin-top: 0;
 }
@@ -221,6 +236,10 @@ main {
   display: flex;
   gap: 1.25rem;
   margin-top: 0.625rem;
+}
+
+.extra-gap.news-center .news-pagination {
+  margin: 2.5rem 0 3.125rem;
 }
 
 .news-card {
@@ -605,6 +624,7 @@ aside {
   gap: 0.75rem;
 }
 
+.btn,
 .internal-forms-list .btn {
   text-decoration: none;
   color: white;
@@ -615,6 +635,7 @@ aside {
   transition: all 0.3s ease;
 }
 
+.btn:hover,
 .internal-forms-list .btn:hover {
   opacity: 0.8;
   text-shadow: 0px 0px 3px rgb(0 0 0 / 50%);
@@ -632,7 +653,7 @@ aside {
   background-color: #82a7c9;
 }
 
-.birthday-list {
+.people-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -644,7 +665,7 @@ aside {
   border-radius: 0.625rem;
 }
 
-.birthday-list li {
+.people-list li {
   width: 100%;
   display: flex;
   align-items: center;
@@ -653,18 +674,34 @@ aside {
   transition: background-color 0.3s ease;
 }
 
-.birthday-list li:hover {
+.people-list li:hover {
   background-color: #f9f9f9;
 }
 
-.birthday-list .name {
+.people-list .name {
   margin: 0;
   color: #112f56;
+  font-weight: 600;
 }
 
-.birthday-list .date {
+.people-list .info {
   font-size: 0.75rem;
   color: #b0b1b3;
+  text-decoration: none;
+}
+
+.tech-support .people-list .name {
+  margin: 0 0 0.25rem;
+}
+
+.tech-support .people-list li {
+  align-items: flex-start;
+}
+
+.people-list li.list-head {
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .employee-guide {
@@ -677,6 +714,22 @@ aside {
 
 .employee-guide a {
   display: inline-block;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.75rem;
+}
+
+.social-links a {
+  width: 100%;
+  display: inline-block;
+}
+
+aside h2 {
+  text-align: left;
 }
 
 /* min-width: 400px */
@@ -745,9 +798,13 @@ aside {
 
 /* min-width: 600px */
 @media screen and (min-width: 37.5rem) {
-  .birthday-list li {
+  .people-list li {
     width: calc(50% - 0.625rem);
   }
+  .tech-support .people-list li {
+    width: 100%;
+  }
+
   .slide-image {
     height: 10rem;
   }
@@ -815,6 +872,9 @@ aside {
   .menu-icon {
     display: none;
   }
+  .header-banner .page-title.has-offset {
+    transform: translateY(-0.75rem);
+  }
   .header-logos {
     transform: translateY(-50%);
     padding: 0;
@@ -825,6 +885,9 @@ aside {
   }
   .header-logos ul.full-width {
     justify-content: space-between;
+  }
+  .header-logos ul.gap-lg {
+    gap: 3rem;
   }
   .content-wrapper {
     flex-direction: row;
@@ -854,7 +917,7 @@ aside {
   .btn.strip-padding {
     padding: 0.1875rem 2rem;
   }
-  .birthday-list li {
+  .people-list li {
     width: 100%;
   }
   .resources-carousel .slide {
